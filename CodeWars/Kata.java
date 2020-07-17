@@ -17,4 +17,9 @@ public class Kata {
                 return "WRONG ORIENTATION";
         }
     }
+
+    public static int toBinary(int n) {
+
+        return Integer.parseInt(Integer.toBinaryString(n));
+    }
 }
