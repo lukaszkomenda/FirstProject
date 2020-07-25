@@ -22,4 +22,9 @@ public class Kata {
 
         return Integer.parseInt(Integer.toBinaryString(n));
     }
+
+    public static boolean zeroFuel(double distanceToPump, double mpg, double fuelLeft) {
+        // Your code here!
+        return distanceToPump <= (mpg * fuelLeft);
+    }
 }

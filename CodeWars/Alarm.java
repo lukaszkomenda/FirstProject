@@ -6,10 +6,6 @@ public class Alarm {
             return false;
         } else if (!employed && vacation){
             return false;
-        } else if (!employed && !vacation){
-            return false;
-        } else {
-            return true;
-        }
+        } else return employed || vacation;
     }
 }

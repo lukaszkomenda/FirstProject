@@ -5,9 +5,9 @@ public class Dubstep {
         String text = "";
         String[] array = song.split("WUB");
 
-        for (int i = 0; i < array.length; i++) {
-            if (!array[i].isBlank()){
-                text += array[i] + " ";
+        for (String s : array) {
+            if (!s.isBlank()) {
+                text += s + " ";
             }
         }
         return text.trim();

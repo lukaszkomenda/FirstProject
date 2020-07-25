@@ -2,6 +2,7 @@ package CodeWarsTests;
 
 import CodeWars.MyUtilities;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class DigitTest {
@@ -9,13 +10,17 @@ public class DigitTest {
     MyUtilities myUtil = new MyUtilities();
 
     @Test
-    public void test0() throws Exception
-    {
-        assertEquals(false,myUtil.isDigit("s2324"));
+    public void test0() throws Exception {
+        assertEquals(false, myUtil.isDigit("s2324"));
     }
+
     @Test
-    public void test1() throws Exception
-    {
-        assertEquals(true,myUtil.isDigit("-234.4"));
+    public void test1() throws Exception {
+        assertEquals(true, myUtil.isDigit("-234.4"));
+    }
+
+    @Test
+    public void test2() throws Exception{
+        assertEquals(false, myUtil.isDigit("-23s.25"));
     }
 }
