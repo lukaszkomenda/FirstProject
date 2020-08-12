@@ -33,4 +33,10 @@ public class Solution {
 
 
     }
+
+    public static long solve(String st, int k){
+        String fragment = st.substring(k);
+
+        return Long.parseLong(fragment);
+    }
 }
