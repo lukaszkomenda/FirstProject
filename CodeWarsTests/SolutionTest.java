@@ -78,5 +78,9 @@ public class SolutionTest {
         assertEquals(4,Solution.solve("1234",3));
     }
 
+    @Test
+    public void sampleTests() {
+        assertEquals(3, Kata.stantonMeasure(new int[] {1, 4, 3, 2, 1, 2, 3, 2}));
+    }
 
 }

@@ -53,4 +53,40 @@ public class Kata {
 
 
     }
+
+    public static int[] multiples(int m, int n) {
+        // Code here!
+
+        int multipier = 1;
+        int[] array = new int[m];
+
+        for (int i = 0; i < m; i++) {
+            array[i] = multipier * n;
+            multipier++;
+        }
+
+        return array;
+    }
+
+    public static int stantonMeasure(int[] arr) {
+        // Your code here
+
+        int oneCounter = 0;
+        int statCounter = 0;
+
+        for (int k : arr) {
+            if (k == 1) {
+                oneCounter++;
+            }
+        }
+
+        for (int j : arr) {
+            if (j == oneCounter) {
+                statCounter++;
+            }
+        }
+
+        return statCounter;
+    }
 }
+
