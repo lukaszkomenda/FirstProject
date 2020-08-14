@@ -88,5 +88,25 @@ public class Kata {
 
         return statCounter;
     }
+
+    public static int travel(int totalTime, int runTime, int restTime, int speed) {
+        // todo...
+
+        int distance = 0;
+        int time = 0;
+        boolean isRunTimeBiggerThanTotalTime = runTime > totalTime;
+
+        while (time < totalTime){
+            time += runTime;
+            if (isRunTimeBiggerThanTotalTime) {
+                distance += speed * totalTime;
+            } else {
+                distance += speed * runTime;
+            }
+            time += restTime;
+        }
+
+        return distance;
+    }
 }
 
