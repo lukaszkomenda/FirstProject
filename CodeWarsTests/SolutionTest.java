@@ -90,4 +90,13 @@ public class SolutionTest {
         assertEquals(15, Sum.arrayPlusArray(new int[]{0,0,0}, new int[]{4,5,6}));
         assertEquals(2100, Sum.arrayPlusArray(new int[]{100,200,300}, new int[]{400,500,600}));
     }
+
+    @Test
+    public void sampleTrumpTests() {
+        assertEquals(0, TrumpDetectorUn.detect("I will build a huge wall"),0.001);
+        assertEquals(4, TrumpDetectorUn.detect("HUUUUUGEEEE WAAAAAALL"),0.001);
+        assertEquals(2.5, TrumpDetectorUn.detect("MEXICAAAAAAAANS GOOOO HOOOMEEEE"),0.001);
+        assertEquals(1.89, TrumpDetectorUn.detect("America NUUUUUKEEEE Oooobaaaamaaaaa"),0.001);
+        assertEquals(1.56, TrumpDetectorUn.detect("listen migrants: IIII KIIIDD YOOOUUU NOOOOOOTTT"),0.001);
+    }
 }
